@@ -20,7 +20,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body class="">
     <!-- Start Header -->
     <header class="fixed top-0 z-[100] w-full text-black bg-gray-50">
       <div class="mx-[10rem] flex justify-center items-center">
@@ -32,9 +32,9 @@
           id="marqueeInfo"
         >
           <div class="flex gap-x-10 font-bold text-gray-900">
-            <p id="totalPengunjung">Total Pengunjung: 0</p>
-            <p id="totalGaleriFoto">Galeri Foto: 0</p>
-            <p id="totalGaleriVideo">Galeri Video: 0</p>
+            <p> Pengunjung:  <span id="totalPengunjung">0</span></p>
+            <p>Galeri Foto:  <span id="totalFoto">0</span></p>
+            <p>Galeri Video: <span id="totalVide">0</span></p>
           </div>
         </marquee>
       </div>
@@ -79,7 +79,7 @@
           <li
             class="group cursor-pointer relative dropdown flex items-center justify-center h-full"
           >
-            <span>Berita</span>
+            <span class="dropdown-icon">Berita</span>
             <ul
               class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
             >
@@ -382,6 +382,40 @@
         </div>
       </div>
     </section>
+    <!-- Section peta -->
+      <section id="Contact" class="flex flex-row gap-x-10 justify-center items-center w-full  px-[100px] py-[50px] h-[500px]">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.289272893256!2d122.1425491557971!3d-0.933067756200967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8670f6cd522593%3A0x14bb5c17112dd43a!2sKantor%20Camat%20Nuhon!5e0!3m2!1sid!2sid!4v1718277151163!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <!-- Footer -->
+       <footer class="bg-gray-800 flex flex-col lg:flex-row lg:justify-around px-3 gap-3 py-10">
+        <div class="flex flex-col lg:flex-row gap-5">
+          <!-- Alamat -->
+          <div class="w-full lg:w-[300px] text-white">
+            <h3 class=" font-bold text-xl">Lokasi</h3>
+            <p class="text-md">Jl. Trans Sulawesi, Desa Nuhon, Kecamatan Nuhon, Kabupaten Banggai, Provinsi Sulawesi Tengah, Indonesia.</p>
+          </div>
+          <!-- Hubungi -->
+          <div class="w-full lg:w-[300px] text-white">
+            <h3 class="font-bold mb-1 text-xl">Hubungi Kami</h3>
+            <ul class="flex flex-col gap-y-3">
+              <li><i class="fa-solid fa-phone p-1 border mr-3"></i>Nomor Admin</li>
+              <li><i class="fa-solid fa-phone p-1 border mr-3"></i>Nomor Kantor</li>
+              <li><i class="fa-solid fa-envelope p-1 border mr-3"></i>Email Jika ada</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Link ke web kecamata Nuhon lainnya -->
+        <div class="lg:w-[300px] w-full text-white">
+          <h3 class="font-bold text-xl">Link Lainnya</h3>
+          <ul class="flex flex-col">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Tambah jika perlu</a></li>
+          </ul>
+        </div>
+       </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/carousel.js"></script>
   </body>
