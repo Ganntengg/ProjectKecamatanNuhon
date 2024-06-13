@@ -86,7 +86,7 @@
               <li
                 class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
               >
-                <a href="/berita-terbaru">Berita Terbaru</a>
+                <a href="/semua-berita">Semua Berita</a>
               </li>
               <li
                 class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
@@ -255,12 +255,12 @@
           <div class="grid lg:grid-cols-2 grid-cols-1">
             <a
               href="/galeri-foto"
-              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4"
+              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4 hover:bg-teal-800 font-bold transition duration-300"
               >SEMUA FOTO</a
             >
             <a
               href="/galeri-video"
-              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4"
+              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4 hover:bg-teal-800 font-bold transition duration-300"
               >SEMUA VIDEO</a
             >
           </div>
@@ -271,14 +271,14 @@
     <section
       class="w-full relative flex flex-row h-screen justify-center py-5 gap-x-10"
     >
-      <!-- Section berita dan agenda kegiatan -->
+      <!-- Section berita lainnya dan agenda kegiatan -->
       <div class="flex flex-row gap-x-5 w-[1140px]">
-        <!-- Section Berita -->
-        <div class="flex flex-col gap-y-2 w-[900px]">
+        <!-- Section Berita Wilayah -->
+        <div class="flex flex-col gap-y-2 w-[800px]">
           <div
             class="flex justify-center items-center border w-full bg-teal-600 font-bold relative py-2"
           >
-            <p class="text-xl text-white font-bold">BERITA TERBARU</p>
+            <p class="text-xl text-white font-bold">BERITA WILAYAH</p>
           </div>
           <div class="bg-teal-700 flex flex-row gap-x-3">
             <img src="assets/img/foto174116.jpg" alt="" />
@@ -328,13 +328,56 @@
               <p class="text-sky-100 text-[12px]">Tgl berita ini</p>
             </div>
           </div>
+          <a
+            href="/semua-berita"
+            class="flex justify-center items-center bg-teal-600 text-white font-bold duration-300 transition hover:bg-teal-800 py-3"
+            >SEMUA BERITA</a
+          >
         </div>
-        <!-- Section agenda kegiatan -->
-        <div class="bg-red-100">
+        <!-- Section agenda kegiatan, dan berita lainnya -->
+        <div class="bg-yellow-300 w-[340px]">
+          <!-- Section berita lainnya -->
+          <div class="">
+            <div class="flex justify-center items-center w-full bg-yellow-400 font-bold relative py-2 text-xl text-gray-900">
+              <p>BERITA LAINNYA</p>
+            </div>
+            <div id="beritaLainnya" class="flex flex-col overflow-y-auto h-[304px]">
+              <div class="px-2 flex flex-col gap-y-3">
+                <a href="" class="text-gray-900 flex flex-col group">
+                  <p class="text-lg group-hover:font-bold">Header</p>
+                  <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
+                </a>
+                <a href="" class="text-gray-900 flex flex-col group">
+                  <p class="text-lg group-hover:font-bold">Header</p>
+                  <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
+                </a>
+                <a href="" class="text-gray-900 flex flex-col group">
+                  <p class="text-lg group-hover:font-bold">Header</p>
+                  <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
+                </a>
+                <a href="" class="text-gray-900 flex flex-col group">
+                  <p class="text-lg group-hover:font-bold">Header</p>
+                  <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
+                </a>
+                <a href="" class="text-gray-900 flex flex-col group">
+                  <p class="text-lg group-hover:font-bold">Header</p>
+                  <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Section Agenda kegiatan -->
           <div
-            class="flex justify-center items-center border w-full bg-yellow-400 font-bold relative py-2"
+            class="flex border justify-center items-center w-full bg-yellow-400 font-bold relative py-2 mt-4"
           >
             <p class="text-xl text-gray-900 font-bold">AGENDA</p>
+          </div>
+            <ul class="flex relative flex-col justify-center m-2 before:content-[''] before:absolute before:top-0 before:h-full before:left-[5.5px] before:w-[5px] before:bg-gray-900 before:z-10 ">
+              <li class="text-gray-900 mb-3"><i class="fa-solid fa-circle"></i> 2 Hari esok</li>
+              <li class="text-gray-900 mb-3"><i class="fa-solid fa-circle"></i> 1 Hari esok</li>
+              <li class="text-gray-900 "><i class="fa-solid fa-circle"></i> Hari ini</li>
+            </ul>
           </div>
         </div>
       </div>

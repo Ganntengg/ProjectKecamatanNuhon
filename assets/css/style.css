@@ -16,3 +16,10 @@
   margin-left: 4px;
   vertical-align: middle;
 }
+#beritaLainnya::-webkit-scrollbar {
+  background-color: yellow;
+  width: 2px;
+}
+#beritaLainnya::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
