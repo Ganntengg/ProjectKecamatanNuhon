@@ -1,0 +1,30 @@
+Background (#f8f5f2)
+
+Tailwind: bg-gray-50 atau bg-gray-100
+Headline (#232323)
+
+Tailwind: bg-gray-900
+Paragraph (#222525)
+
+Tailwind: bg-gray-900 (karena tidak ada warna yang sangat mirip, ini adalah warna terdekat)
+Button (#078080)
+
+Tailwind: bg-teal-700
+Button Text (#232323)
+
+Tailwind: text-gray-900
+Stroke (#232323)
+
+Tailwind: border-gray-900
+Secondary (#f45d48)
+
+Tailwind: bg-red-500 atau bg-red-600
+Main (#ffffff)
+
+Tailwind: bg-white
+Highlight (#078080)
+
+Tailwind: bg-teal-700
+Tertiary (#f8f5f2)
+
+Tailwind: bg-gray-50 atau bg-gray-100

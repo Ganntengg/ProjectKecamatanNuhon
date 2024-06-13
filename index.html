@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Resmi Kecamatan Nuhon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-banggi-resmi.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="fixed top-0 z-[100] w-full text-black bg-gray-50">
+      <div class="mx-[10rem] flex justify-center items-center">
+        <marquee
+          behavior=""
+          direction="left"
+          onmouseover="this.stop()"
+          onmouseout="this.start()"
+          id="marqueeInfo"
+        >
+          <div class="flex gap-x-10 font-bold text-gray-900">
+            <p id="totalPengunjung">Total Pengunjung: 0</p>
+            <p id="totalGaleriFoto">Galeri Foto: 0</p>
+            <p id="totalGaleriVideo">Galeri Video: 0</p>
+          </div>
+        </marquee>
+      </div>
+      <nav class="h-[6rem] flex justify-around items-stretch shadow-lg">
+        <div class="flex justify-center items-center">
+          <a href="/" class="">
+            <img
+              src="assets/img/logo.png"
+              class="object-cover w-[20rem] h-[5rem]"
+              alt=""
+            />
+          </a>
+        </div>
+        <ul
+          id="navUlPc"
+          class="flex justify-center block items-center gap-10 text-gray-900 font-bold"
+        >
+          <li class="group cursor-pointer relative h-full flex items-center">
+            <span class="dropdown-icon flex justify-center items-center"
+              >Profil</span
+            >
+            <ul
+              class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+            >
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/pages/gambaran-umum">Geografis</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/pages/visimisi">Visi & Misi</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/pages/data-pegawai">Data Pegawai</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="group cursor-pointer relative dropdown flex items-center justify-center h-full"
+          >
+            <span>Berita</span>
+            <ul
+              class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+            >
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/berita-terbaru">Berita Terbaru</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/galeri-foto">Galeri Foto</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/galeri-video">Galeri Video</a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="group cursor-pointer dropdown relative flex items-center justify-center h-full"
+          >
+            <span>KEUANGAN</span>
+            <ul
+              class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+            >
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/keuangan/bos">BOS</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/keuangan/apbd">APBD</a>
+              </li>
+              <li
+                class="lines-item relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+              >
+                <a href="/keuangan/komite">Komite</a>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer flex h-full items-center justify-center">
+            <a href="#ekstrakurikuler">EKSTRAKURIKULER</a>
+          </li>
+          <li class="cursor-pointer flex h-full items-center justify-center">
+            <a href="#prestasi">PRESTASI</a>
+          </li>
+          <li class="cursor-pointer flex h-full items-center justify-center">
+            <a href="#profilAlumni">PROFIL ALUMNI</a>
+          </li>
+          <li class="cursor-pointer flex h-full items-center justify-center">
+            <a href="#Contact">KONTAK</a>
+          </li>
+          <li class="cursor-pointer flex h-full items-center">ID</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Home -->
+    <section
+      class="w-full h-screen bg-gray-100 flex justify-center items-center"
+    >
+      <div class="flex flex-col gap-y-[5rem]">
+        <div class="flex justify-center items-center">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
+        <form action="" class="flex w-[200px] lg:w-[600px]">
+          <input
+            type="text"
+            class="shadow-lg w-full border border-gray-900 border-r-0 outline-none px-5 py-2 rounded-full rounded-r-none text-sm h-[3rem]"
+            placeholder="Silahkan cari"
+          />
+          <button
+            type="submit"
+            class="bg-teal-600 text-white border border-l-0 border-gray-900 rounded-full rounded-l-none px-4"
+          >
+            Cari
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- End Home -->
+    <!-- Sambutan, galeri video & foto -->
+    <section
+      class="w-full relative flex flex-row justify-center bg-gray-50 py-5"
+    >
+      <!-- Section Sambutan -->
+      <div class="w-[370px]">
+        <div
+          class="flex justify-center items-center border w-full text-xl bg-teal-600 text-white font-bold py-2"
+        >
+          CAMAT & SEKCAM
+        </div>
+        <div class="flex flex-row gap-x-3 mt-3">
+          <!-- Gambar bisa diganti jadi camat & sekcam saat ini -->
+          <img src="assets/img/dummy.jpg" width="179" alt="" />
+          <img src="assets/img/dummy.jpg" width="179" alt="" />
+        </div>
+        <div class="flex flex-col items-center p-3 bg-teal-600 text-white mt-1">
+          <p style="font-family: 'Times New Roman'" class="text-2xl font-bold">
+            Kata Sambutan
+          </p>
+          <p class="text-sm my-2">
+            Assalamu'alaikum warahmatullahi wabarakatuh,
+          </p>
+          <p class="text-justify text-sm">
+            &nbsp; Dengan mengucap puji syukur kehadirat Allah SWT, Pemerintah
+            Kecamatan Nuhon dengan bangga mempersembahkan situs web resmi ini
+            sebagai media publik untuk menyampaikan informasi mengenai jalannya
+            pemerintahan, kondisi, serta potensi yang dimiliki Kecamatan Nuhon.
+            Kami berharap situs web ini dapat menjadi sarana yang bermanfaat
+            bagi seluruh masyarakat, baik yang berada di dalam maupun di luar
+            Kecamatan Nuhon.
+          </p>
+        </div>
+      </div>
+      <!-- Section Galeri video & foto -->
+      <div class="flex flex-col px-3 gap-y-3 w-[770px]">
+        <!-- Video -->
+        <div class="flex flex-col gap-y-3 w-full">
+          <div
+            class="flex justify-center items-center border w-full py-2 bg-yellow-400 font-bold relative"
+          >
+            <p class="text-xl text-gray-900 font-bold">GALERI VIDEO</p>
+          </div>
+          <div>
+            <!-- Bisa diganti video terbaru yang dekat dengan tanggal saat ini -->
+            <iframe
+              class="w-full h-[280px]"
+              src="https://youtube.com/embed/HZvG-zFGnmI"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Foto -->
+        <div class="flex flex-col">
+          <div
+            class="flex justify-center items-center border w-full bg-yellow-500 font-bold relative py-2"
+          >
+            <p class="text-xl text-gray-900 font-bold">GALERI FOTO</p>
+          </div>
+          <div
+            class="bg-yellow-400 w-full px-10 py-3 flex justify-center items-center"
+          >
+            <div
+              class="swiper-container relative overflow-hidden flex justify-center items-center w-full"
+            >
+              <div class="swiper-wrapper w-full">
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 1" />
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 2" />
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 3" />
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 4" />
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 5" />
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                  <img src="assets/img/foto174116.jpg" alt="Image 6" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tombol galeri-video dan galeri-foto -->
+          <div class="grid lg:grid-cols-2 grid-cols-1">
+            <a
+              href="/galeri-foto"
+              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4"
+              >SEMUA FOTO</a
+            >
+            <a
+              href="/galeri-video"
+              class="bg-teal-600 border border-gray-50 text-white flex justify-center items-center p-4"
+              >SEMUA VIDEO</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Berita terbaru, agenda kegiatan -->
+    <section class="w-full relative flex flex-row justify-center">
+      <!-- Section Berita -->
+      <div></div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+  </body>
+</html>
