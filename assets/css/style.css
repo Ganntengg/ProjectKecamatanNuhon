@@ -16,6 +16,20 @@
   margin-left: 4px;
   vertical-align: middle;
 }
+.dropdown-icon-rotated::after {
+  content: "";
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-left: 4px;
+  vertical-align: middle;
+}
+li.sub-group:hover ul.sub-group-menu {
+  transform: scaleX(100%);
+  transform: translateX(100%);
+}
 #beritaLainnya::-webkit-scrollbar {
   background-color: yellow;
   width: 2px;
