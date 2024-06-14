@@ -1,0 +1,168 @@
+<div class="mx-[10rem] flex justify-center items-center">
+  <marquee
+    behavior=""
+    direction="left"
+    onmouseover="this.stop()"
+    onmouseout="this.start()"
+    id="marqueeInfo"
+  >
+    <div class="flex gap-x-10 font-bold text-gray-900">
+      <p>Pengunjung: <span id="totalPengunjung">0</span></p>
+      <p>Galeri Foto: <span id="totalFoto">0</span></p>
+      <p>Galeri Video: <span id="totalVide">0</span></p>
+    </div>
+  </marquee>
+</div>
+<nav class="h-[6rem] flex justify-around items-stretch shadow-lg">
+  <div class="flex justify-center items-center">
+    <a href="/" class="">
+      <img
+        src="../assets/img/logo.png"
+        class="object-cover w-[20rem] h-[5rem]"
+        alt=""
+      />
+    </a>
+  </div>
+  <ul
+    id="navUlPc"
+    class="flex justify-center block items-center gap-10 text-gray-900 font-bold"
+  >
+    <li class="group cursor-pointer relative h-full flex items-center">
+      <span class="dropdown-icon flex justify-center items-center">Profil</span>
+      <ul
+        class="dropdown-menu divide-y scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+      >
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/kondisi-geografis">Kondisi Geografis</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/gambaran-umum">Gambaran Umum</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/visimisi">Visi & Misi</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/data-pegawai">Data Pegawai</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/potensi-wilayah">Potensi Wilayah</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/pages/sarpra">Sarana & Prasarana</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      class="group cursor-pointer relative dropdown flex items-center justify-center h-full"
+    >
+      <span class="dropdown-icon">Berita</span>
+      <ul
+        class="dropdown-menu scale-y-0 divide-y opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+      >
+        <li
+          class="relative sub-group flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <span class="dropdown-icon-rotated">Semua Berita</span>
+          <ul
+            class="sub-group-menu scale-y-0 origin-left absolute right-0 top-0 bg-white flex flex-col divide-y transition duration-300"
+          >
+            <li
+              class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+            >
+              <a href="/berita-wilayah" class="">Berita Wilayah</a>
+            </li>
+            <li
+              class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+            >
+              <a href="/kota-kabupaten" class="">Berita Kota/Kabupaten</a>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/galeri-foto">Galeri Foto</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/galeri-video">Galeri Video</a>
+        </li>
+      </ul>
+    </li>
+    <li
+      class="group cursor-pointer dropdown relative flex items-center justify-center h-full"
+    >
+      <span class="flex justify-center items-center dropdown-icon"
+        >Infrastruktur</span
+      >
+      <ul
+        class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
+      >
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Puskesmas</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Polsek</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Koramil</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">KUA</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">UPT Pendidikan</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Pertanian</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Perikanan</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Peternakan</a>
+        </li>
+        <li
+          class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
+        >
+          <a href="/">Perbankan</a>
+        </li>
+      </ul>
+    </li>
+    <li class="cursor-pointer flex h-full items-center justify-center">
+      <a href="/dokumen">Dokumen</a>
+    </li>
+    <li class="cursor-pointer flex h-full items-center justify-center">
+      <a href="#Contact">Hubungi Kami</a>
+    </li>
+  </ul>
+</nav>

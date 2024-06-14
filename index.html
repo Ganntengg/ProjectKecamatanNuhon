@@ -19,168 +19,11 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="assets/js/loadHTML.js"></script>
   </head>
   <body class="">
     <!-- Start Header -->
-    <header class="fixed top-0 z-[100] w-full text-black bg-gray-50">
-      <div class="mx-[10rem] flex justify-center items-center">
-        <marquee
-          behavior=""
-          direction="left"
-          onmouseover="this.stop()"
-          onmouseout="this.start()"
-          id="marqueeInfo"
-        >
-          <div class="flex gap-x-10 font-bold text-gray-900">
-            <p> Pengunjung:  <span id="totalPengunjung">0</span></p>
-            <p>Galeri Foto:  <span id="totalFoto">0</span></p>
-            <p>Galeri Video: <span id="totalVide">0</span></p>
-          </div>
-        </marquee>
-      </div>
-      <nav class="h-[6rem] flex justify-around items-stretch shadow-lg">
-        <div class="flex justify-center items-center">
-          <a href="/" class="">
-            <img
-              src="assets/img/logo.png"
-              class="object-cover w-[20rem] h-[5rem]"
-              alt=""
-            />
-          </a>
-        </div>
-        <ul
-          id="navUlPc"
-          class="flex justify-center block items-center gap-10 text-gray-900 font-bold"
-        >
-          <li class="group cursor-pointer relative h-full flex items-center">
-            <span class="dropdown-icon flex justify-center items-center"
-              >Profil</span
-            >
-            <ul
-              class="dropdown-menu divide-y scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
-            >
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/kondisi-geografis">Kondisi Geografis</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/gambaran-umum">Gambaran Umum</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/visimisi">Visi & Misi</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/data-pegawai">Data Pegawai</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/potensi-wilayah">Potensi Wilayah</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/pages/sarpra">Sarana & Prasarana</a>
-              </li>
-            </ul>
-          </li>
-          <li
-            class="group cursor-pointer relative dropdown flex items-center justify-center h-full"
-          >
-            <span class="dropdown-icon">Berita</span>
-            <ul
-              class="dropdown-menu scale-y-0 divide-y opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
-            >
-              <li
-                class="relative sub-group flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <span class=" dropdown-icon-rotated">Semua Berita</span>
-                <ul class="sub-group-menu scale-y-0 origin-left absolute right-0 top-0 bg-white flex flex-col divide-y transition duration-300">
-                  <li class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"><a href="/berita-wilayah" class="">Berita Wilayah</a></li>
-                  <li class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"><a href="/kota-kabupaten" class="">Berita Kota/Kabupaten</a></li>
-                </ul>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/galeri-foto">Galeri Foto</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/galeri-video">Galeri Video</a>
-              </li>
-            </ul>
-          </li>
-          <li
-            class="group cursor-pointer dropdown relative flex items-center justify-center h-full"
-          >
-            <span class="flex justify-center items-center dropdown-icon">Infrastruktur</span>
-            <ul
-              class="dropdown-menu scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 absolute bottom-0 left-0 translate-y-[100%] w-[15rem] font-normal bg-white text-black md:pb-3 rounded-sm transition-all duration-300 ease-in-out origin-top"
-            >
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Puskesmas</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Polsek</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Koramil</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">KUA</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">UPT Pendidikan</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Pertanian</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Perikanan</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Peternakan</a>
-              </li>
-              <li
-                class="relative flex items-center hover:text-yellow-400 transition duration-300 h-[3rem] px-3"
-              >
-                <a href="/">Perbankan</a>
-              </li>
-            </ul>
-          </li>
-          <li class="cursor-pointer flex h-full items-center justify-center">
-            <a href="/dokumen">Dokumen</a>
-          </li>
-          <li class="cursor-pointer flex h-full items-center justify-center">
-            <a href="#Contact">Hubungi Kami</a>
-          </li>
-        </ul>
-      </nav>
+    <header id="headerHome" class="fixed top-0 z-[100] w-full text-black bg-gray-50">
     </header>
     <!-- End Header -->
     <!-- Start Home -->
@@ -385,23 +228,23 @@
             </div>
             <div id="beritaLainnya" class="flex flex-col overflow-y-auto h-[304px]">
               <div class="px-2 flex flex-col gap-y-3">
-                <a href="" class="text-gray-900 flex flex-col group">
+                <a href="/berita/detail/1" class="text-gray-900 flex flex-col group">
                   <p class="text-lg group-hover:font-bold">Header</p>
                   <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
                 </a>
-                <a href="" class="text-gray-900 flex flex-col group">
+                <a href="/berita/detail/1" class="text-gray-900 flex flex-col group">
                   <p class="text-lg group-hover:font-bold">Header</p>
                   <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
                 </a>
-                <a href="" class="text-gray-900 flex flex-col group">
+                <a href="/berita/detail/1" class="text-gray-900 flex flex-col group">
                   <p class="text-lg group-hover:font-bold">Header</p>
                   <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
                 </a>
-                <a href="" class="text-gray-900 flex flex-col group">
+                <a href="/berita/detail/1" class="text-gray-900 flex flex-col group">
                   <p class="text-lg group-hover:font-bold">Header</p>
                   <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
                 </a>
-                <a href="" class="text-gray-900 flex flex-col group">
+                <a href="/berita/detail/1" class="text-gray-900 flex flex-col group">
                   <p class="text-lg group-hover:font-bold">Header</p>
                   <p class="text-[13px] text-gray-900">Detail dari header Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
                 </a>
@@ -429,34 +272,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.289272893256!2d122.1425491557971!3d-0.933067756200967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8670f6cd522593%3A0x14bb5c17112dd43a!2sKantor%20Camat%20Nuhon!5e0!3m2!1sid!2sid!4v1718277151163!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <!-- Footer -->
-       <footer class="bg-gray-800 flex flex-col lg:flex-row lg:justify-around px-3 gap-3 py-10">
-        <div class="flex flex-col lg:flex-row gap-5">
-          <!-- Alamat -->
-          <div class="w-full lg:w-[300px] text-white">
-            <h3 class=" font-bold text-xl">Lokasi</h3>
-            <p class="text-md">Jl. Trans Sulawesi, Desa Nuhon, Kecamatan Nuhon, Kabupaten Banggai, Provinsi Sulawesi Tengah, Indonesia.</p>
-          </div>
-          <!-- Hubungi -->
-          <div class="w-full lg:w-[300px] text-white">
-            <h3 class="font-bold mb-1 text-xl">Hubungi Kami</h3>
-            <ul class="flex flex-col gap-y-3">
-              <li><i class="fa-solid fa-phone p-1 border mr-3"></i>Nomor Admin</li>
-              <li><i class="fa-solid fa-phone p-1 border mr-3"></i>Nomor Kantor</li>
-              <li><i class="fa-solid fa-envelope p-1 border mr-3"></i>Email Jika ada</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Link ke web kecamata Nuhon lainnya -->
-        <div class="lg:w-[300px] w-full text-white">
-          <h3 class="font-bold text-xl">Link Lainnya</h3>
-          <ul class="flex flex-col">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Tambah jika perlu</a></li>
-          </ul>
-        </div>
+       <footer id="footerHome" class="bg-gray-800 flex flex-col lg:flex-row lg:justify-around px-3 gap-3 py-10">
        </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/carousel.js"></script>
